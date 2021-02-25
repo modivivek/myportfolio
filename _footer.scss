@@ -1,0 +1,63 @@
+.footer {
+    background-color: $wet-ashphalt;
+    padding: 2.08rem; // 25px / 12px = 2.08rem 1 rem = 12px
+    font-size: 1.25rem;
+    //height: 30vh;
+    color: #ffffff;
+    
+    
+
+    &__address {
+    float: left;
+    margin-bottom: 1rem;
+
+    &-description {
+        padding: 1rem;
+        line-height: 1.5;
+        font-size: 1.25rem;
+        @include respond(phone) {
+            font-size: 1rem;
+        }
+    }
+    
+    }
+    &__social-list {
+    list-style: none;
+    float: right;
+
+    &-item {
+        display: inline-block;
+        padding: 1.25rem;
+        margin-right: 1.25rem;
+
+    }
+    &-facebook-link:visited,&-facebook-link:link,&-whatsapp-link:link,&-whatsapp-link:visited {
+        text-decoration: none;
+        color: #ffffff;
+        transition: color .3s;
+    
+    }
+    &-facebook-link:hover {
+        color: $facebook-color;
+    }
+    &-whatsapp-link:hover {
+        color: $whatsapp-color;
+    }
+    &-facebook-icon {
+        font-size:  2.66rem; // 20px / 12 px
+
+    }
+    &-whatsapp-icon {
+        font-size:  2.66rem; // 20px / 12 px
+    }
+    }
+    
+    &__author {
+    font-size: 1.25rem;
+    font-weight: 300;
+    @include respond(phone) {
+        font-size: 1rem;
+    }
+
+    }
+    }

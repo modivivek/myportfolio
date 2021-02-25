@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-size: 75%; //12 px/16px=75% 1rem=12px 
+}
+// Header section container
+.container {
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+    width: 20rem; //500px width
+   
+}
+.row {
+    max-width: 95rem; // 1140px / 12px = 95 rem, 1 rem = 12px
+    margin: 1rem auto;
+}
+
+
+[type=text], [type=email] {
+    padding: 1.66rem;
+    outline: none;
+    width: 80%;
+    border: 1px  solid transparent;
+    border-radius: 2px;
+    &:focus {
+        border-color: aqua;
+    }
+    }
+   

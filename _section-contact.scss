@@ -1,0 +1,31 @@
+.section-contact {
+    padding: 8.33rem; // 100px /12px
+
+    @include respond(tab-port) {
+        padding: 5.83rem;
+    }
+    @include respond(phone) {
+        padding: 1rem;
+    }
+
+    &__form {
+
+        .form-lable {
+            font-size: 1.66rem;
+            @include respond(tab-port) {
+                font-size: 1.50rem;
+            }
+
+            @include respond(phone) {
+                font-size: 1.30rem;
+            }
+        }
+    }
+    &__btn {
+        margin: 2rem auto;
+        text-align:center;
+        background-color: #2980b9;
+        padding: 1rem 1.66rem 1rem 1.66rem;
+    }
+}
+

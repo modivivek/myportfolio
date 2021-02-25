@@ -1,0 +1,36 @@
+@mixin respond($device) {
+
+   
+
+     @if ($device == tab-land) 
+    {
+   
+    @media only screen and (max-width: 75em) {
+        @content;
+ // tablet landscape 1200px / 16px= 75em
+    }
+}
+    @else if ($device== tab-port)
+    {
+        // tablet landscape 900px / 16px= 56.25em
+    @media only screen and (max-width: 56.25em) {
+    @content;
+    }
+    }
+ 
+    @else if($device== phone) {
+
+        // phone 600px/16px
+        @media only screen and (max-width: 37.5rem) {
+
+            @content;
+        }
+    }
+    @else {
+        
+        
+    
+    }
+
+
+}

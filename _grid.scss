@@ -1,0 +1,27 @@
+.row{
+
+    max-width: 95rem;
+    margin: 1.66rem auto;
+
+    &:not(:last-child) {
+        margin-bottom: 1.66rem;
+    }
+    .col-1-of-2 {
+        
+        width: calc((100% - 1.66rem) / 2);
+        float: left;
+        
+        @include respond(phone) {
+            width: 100%;
+            /*float:none; */  
+        }
+
+        &:not(:last-child) {
+            margin-right: 1.66rem;
+        }
+    }
+    
+    
+}
+
+

@@ -1,0 +1,38 @@
+.section-project {
+    padding: 0;
+    margin: 0;
+    
+    
+
+        &__project-1 {
+            display: inline-block;
+            width: 30%;
+            
+        
+        &--img-1{
+                
+            width: 100%;
+            height: 8.33rem; // 100px/12px
+
+        }
+        &--caption-1 {
+
+        }
+    }
+
+    &__project-2 {
+        display: inline-block;
+        width: 30%;
+        
+        &--img-2{
+             width: 100%;
+            height: 8.33rem;
+
+
+        }
+        &--caption-2 {
+            
+        }
+    }
+    }
+    

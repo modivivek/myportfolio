@@ -1,0 +1,50 @@
+span {
+    color: #3498db;
+}
+.heading-secondary{
+    position: relative;
+    font-size: 3.5rem; // 30px
+    margin-bottom: 1.66rem; // 20px
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 0.83rem;
+
+
+    @include respond (tab-port)
+     {
+        font-size: 3rem;
+    }
+
+    @include respond (phone) {
+        font-size: 2.5rem;
+    }
+} 
+.heading-secondary::before {
+
+    content: "";
+    margin-bottom: 1rem;
+
+}
+.heading-secondary::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    background-color: #3498db;
+    height: .41rem;
+    width: 2rem; // 24px /12px=2rem
+ 
+}
+.heading-tertiary {
+    margin-bottom: 1.66rem;
+    font-size: 2.25rem;
+    text-align: center;
+    color: #3498db;
+    @include respond(tab-land) {
+        font-size: 2rem; 
+    }
+
+    @include respond(phone) {
+        font-size:  1.6rem;  
+    }
+    }
